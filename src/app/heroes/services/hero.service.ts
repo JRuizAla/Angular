@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 import { Hero } from 'src/app/heroes/models/hero.model';
-import { HEROES } from 'src/app/heroes/mocks/mock-heroes';
 import { MessageService } from 'src/app/messages/services/message.service';
+import { HEROES } from '../mocks/mock-heroes';
 
 
 @Injectable({
@@ -12,7 +12,7 @@ import { MessageService } from 'src/app/messages/services/message.service';
 })
 export class HeroService {
 
-  constructor(private messageService: MessageService) { }
+  constructor(public messageService: MessageService) { }
 
   getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
