@@ -1,6 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MessagesComponent } from './messages.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 describe('MessagesComponent', () => {
   let component: MessagesComponent;

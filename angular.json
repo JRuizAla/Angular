@@ -81,13 +81,6 @@
           "options": {
             "browserTarget": "angular-tour-of-heroes:build"
           }
-        },
-        "test": {
-          "builder": "@angular-builders/jest:run",
-          "options": {
-            "tsConfig": "tsconfig.spec.json",
-            "configPath": "./jest.config.js"
-          }
         }
       }
     }
