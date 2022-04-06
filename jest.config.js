@@ -39,4 +39,16 @@ module.exports = {
   testMatch: ["**/+(*.)+(spec|test).+(ts)?(x)"],
 
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
+
+  "roots": [
+    "<rootDir>",
+    "src",
+  ],
+  "modulePaths": [
+    "<rootDir>",
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
 };
