@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Hero } from './models/hero.model';
-import { HeroService } from './services/hero.service';
-import { MessageService } from '../messages/services/message.service';
+import { HeroService } from 'src/app/heroes/services/hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -26,6 +24,7 @@ export class HeroesComponent implements OnInit {
          return  this.heroes = heroes
         });
   }
+<<<<<<< HEAD
 
   add(name: string): void {
     name = name.trim();
@@ -41,3 +40,6 @@ export class HeroesComponent implements OnInit {
     this.heroService.deleteHero(hero.id).subscribe();
   }
 }
+=======
+}
+>>>>>>> angular/feature-fix-jest

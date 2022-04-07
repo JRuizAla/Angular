@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-
 import { Observable, of } from 'rxjs';
-
 import { Hero } from 'src/app/heroes/models/hero.model';
 import { MessageService } from 'src/app/messages/services/message.service';
 import { HEROES } from '../mocks/mock-heroes';
@@ -44,6 +42,7 @@ export class HeroService {
       catchError(this.handleError<Hero>(`getHero id=${id}`))
     );
   }
+<<<<<<< HEAD
 
   /** PUT: update the hero on the server */
   updateHero(hero: Hero): Observable<any> {
@@ -104,4 +103,6 @@ searchHeroes(term: string): Observable<Hero[]> {
     catchError(this.handleError<Hero[]>('searchHeroes', []))
   );
 }
+=======
+>>>>>>> angular/feature-fix-jest
 }

@@ -1,8 +1,11 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HeroService } from '../heroes/services/hero.service';
-import { MessageService } from 'src/app/messages/services/message.service';
 
+import { HeroService } from '../heroes/services/hero.service';
 import { DashboardComponent } from './dashboard.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MessageService } from '../messages/services/message.service';
+import { DashboardModule } from './dashboard.module';
+import { RouterTestingModule } from '@angular/router/testing';
+
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -10,7 +13,8 @@ describe('DashboardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardComponent],
+      imports: [DashboardModule, RouterTestingModule.withRoutes([])],
+      declarations: [ ],
       providers: [HeroService, MessageService]
     })
     .compileComponents();
