@@ -40,14 +40,14 @@ module.exports = {
 
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
 
-  "roots": [
+  roots:[
     "<rootDir>",
     "src",
   ],
-  "modulePaths": [
+  modulePaths:[
     "<rootDir>",
   ],
-  "moduleDirectories": [
+  moduleDirectories:[
     "node_modules",
     "src"
   ],
