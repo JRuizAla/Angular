@@ -24,7 +24,6 @@ export class HeroesComponent implements OnInit {
          return  this.heroes = heroes
         });
   }
-<<<<<<< HEAD
 
   add(name: string): void {
     name = name.trim();
@@ -40,6 +39,3 @@ export class HeroesComponent implements OnInit {
     this.heroService.deleteHero(hero.id).subscribe();
   }
 }
-=======
-}
->>>>>>> angular/feature-fix-jest

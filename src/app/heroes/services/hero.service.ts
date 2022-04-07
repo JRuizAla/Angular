@@ -42,7 +42,6 @@ export class HeroService {
       catchError(this.handleError<Hero>(`getHero id=${id}`))
     );
   }
-<<<<<<< HEAD
 
   /** PUT: update the hero on the server */
   updateHero(hero: Hero): Observable<any> {
@@ -103,6 +102,4 @@ searchHeroes(term: string): Observable<Hero[]> {
     catchError(this.handleError<Hero[]>('searchHeroes', []))
   );
 }
-=======
->>>>>>> angular/feature-fix-jest
 }
